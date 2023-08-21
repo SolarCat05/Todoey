@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title name="title">TODOEY</title>
+       
+        <%- include("partials/header.ejs") %>
+        
+    </head>
+    <body>
+        <h1> 
+            <div class="heading">
+          
+                    <% if(listTitle==="Today"){ %>
+                        <i style="visibility: hidden;">
+                            <%= listTitle %>  
+                            </i>
+                            <%= date %>
+                    <% } else{%>
+                        <%= listTitle %>  
+                    <%}%>                  
+                
+            </div>
+        </h1>
+        <div class="box">
+            <% for(let i=0;i<listItems.length;i++){ %>
+     
+            <div class="item">
+                <input type="checkbox">
+                <p><%= listItems[i]; %></p>
+            </div>
+
+            <% } %>            
+        
+        <form action="<%= listTitle %>" method="POST">
+            <input type="text" name="new">
+            <button type="submit" name="add">+</button>
+        </form>
+    </div>
+    </body>
+    <footer>
+        <%- include("partials/footer.ejs"); %>
+    </footer>
+
+</html>

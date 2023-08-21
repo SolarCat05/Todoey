@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    text-align: center;
+    background-color: bisque;
+ }
+
+.box{
+    background-color: white;  
+    margin: 0px 450px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px -10px gray;
+}
+
+h1{
+    color: white;
+}
+
+.heading{
+    display: block;
+    text-align: center;
+    background-color: plum;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin:0px 450px;
+}
+
+input:checked +p{
+    text-decoration: line-through;
+    
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.item input{
+    margin: 20px;
+}
+
+footer{
+   color: gray;
+   text-align: center;
+}
+
